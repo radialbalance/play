@@ -32,8 +32,9 @@ float crossSDF ( vec2 st, float crossSize){
 	return min ( rectSDF(st, size.xy), rectSDF(st, size.yx));
 }
 
-float flip ( float v, float pct){
-	return mix (v , 1.0 - v, pct);
+float flip ( float value, float boundry){
+	return mix (value , 1.0 - value, boundry);
+	// 1.0 - v is the inverse of v
 }
 
 void main() {
@@ -42,7 +43,7 @@ void main() {
 	vec3 color 		= vec3( 0.0 );
 	float rect		= rectSDF (st , vec2 (0.5, 1.0));
 	float diag 		= (st.x + st.y) * 0.5;
-	color 			+= flip( fill(rect, 0.6), stroke(diag, 0.5, 0.01));
+	color 			+= flip( fill(rect, 0.5), stroke(diag, 0.5, 0.5));
 	// color 			+= fill (rect, 0.5);
 	// float cross 	= crossSDF( st, 0.75);
 	// color 			*= step ( 0.5, fract (cross * 4.0));
