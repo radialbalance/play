@@ -4,6 +4,7 @@ precision mediump float;
 
 #define PI 3.1415
 #define TWO_PI 6.28318530718
+#define QRT_PI .78539816339
 
 uniform vec2 u_resolution;
 //uniform vec2 u_mouse;
@@ -84,14 +85,20 @@ float starSDF(vec2 st, int V, float s){
 	return abs( dot(vec2(cos(a), sin(a)), st));
 }
 
+float raysSDF( vec2 st, int N){
+	st -= 0.5;
+	return fract( atan( st.y, st.x) / TWO_PI * float(N));
+}
+
 void main() {
 	vec2 st 	= gl_FragCoord.st/ u_resolution;
 	vec3 color 	= vec3( 0.0 );
-	color 		+= stroke( circleSDF(st), 0.8, 0.05);
-	st.y 		= 1.0 - st.y;
-	float s 	= starSDF(st.yx, 5, 0.1);
-	color 		*= step( 0.7, s );
-	color 		+= stroke( s, 0.4, 0.1);
+
+	color 		+= flip( stroke(raysSDF(st, 28), 0.5, 0.2),
+					fill( st.y, 0.5));
+	float rect 	= rectSDF( st, vec2(1.0));
+	color 		*= step( 0.25, rect);
+	color 		+= fill( rect, 0.2);
 	gl_FragColor	= vec4(color, 1.0);
 
 }

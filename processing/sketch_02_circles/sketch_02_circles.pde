@@ -1,10 +1,10 @@
 PShader shader;
 
 void setup() {
-  size(500, 500, P2D);
+  size(1000, 1000, P2D);
   noStroke();
 
-  shader = loadShader("shader_magician.frag");
+  shader = loadShader("shader_circles.frag");
 }
 
 void draw() {
