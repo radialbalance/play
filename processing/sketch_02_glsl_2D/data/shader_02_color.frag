@@ -16,23 +16,8 @@ precision mediump float;
 	Please fix my coding errors and grammar errors. :-)
 */
 
-// Ported to TouchDesigner by Matthew Ragan
-// matthewragan.com
-
-/*
-	Getting your bearings with GLSL can be a bit of a rodeo when
-	you're first getting started. Uğur's 2D tuts were a huge help to me
-	when I was first getting started, and they often show examples
-	that are a little more granular than The Book of Shaders. 
-
-	Hopefully this set of examples will help you get started and 
-	get your gl bearings here in Touch.
-
-	When possible, I've copied the examples as faithfully as possible.
-	What that means is that there may be better ways to approach some
-	challenges - but what you'll find here is as close to the original
-	tutorial as I can manage.
-*/
+// Ported to Processing by Zoe Sandoval
+// zoesanodval.com
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Tutorial 2

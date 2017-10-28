@@ -4,7 +4,7 @@ void setup() {
   size(500, 500, P2D);
   noStroke();
 
-  shader = loadShader("shader_05_coordinates.frag");
+  shader = loadShader("shader_21_color_study.frag");
 }
 
 void draw() {

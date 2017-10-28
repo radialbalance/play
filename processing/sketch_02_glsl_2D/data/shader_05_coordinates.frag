@@ -16,45 +16,37 @@ precision mediump float;
 	Please fix my coding errors and grammar errors. :-)
 */
 
-// Ported to TouchDesigner by Matthew Ragan
-// matthewragan.com
-
-/*
-	Getting your bearings with GLSL can be a bit of a rodeo when
-	you're first getting started. Uğur's 2D tuts were a huge help to me
-	when I was first getting started, and they often show examples
-	that are a little more granular than The Book of Shaders. 
-
-	Hopefully this set of examples will help you get started and 
-	get your gl bearings here in Touch.
-
-	When possible, I've copied the examples as faithfully as possible.
-	What that means is that there may be better ways to approach some
-	challenges - but what you'll find here is as close to the original
-	tutorial as I can manage.
-*/
+// Ported to Processing by Zoe Sandoval
+// zoesanodval.com
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Tutorial 4
-// RGB COLOR MODEL AND COMPONENTS OF VECTORS
+// Tutorial 5
+// THE COORDINATE SYSTEM
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// "fragCoord", "fragment coordinate" is an input variable.
 //
-// After initialized, the components of vectors can be reached using
-// the dot "." notation.
+// It tells us at which pixel we are on the screen. The coordinate center
+// is the left bottom corner, and coordinate values increases towards
+// right and upwards.
 //
-// RGB: http://en.wikipedia.org/wiki/RGB_color_model
-// A color is represented by three numbers (here in the range [0.0, 1.0])
-// The model assumes the addition of pure red, green and blue lights
-// of given intensities.
+// The main function is run for each and every pixel on the screen. At
+// each call the "gl_FracCoord" has the coordinates of the corresponding
+// pixel.
 //
-// If you lack design skills like me, and having hard time
-// in choosing nice looking, coherent set of colors 
-// you can use one of these websites to choose color palettes, where
-// you can browse different sets of colors 
-// https://kuler.adobe.com/create/color-wheel/
-// http://www.colourlovers.com/palettes
-// http://www.colourlovers.com/colors
+// GPUs have many cores, so, the function calls for different pixels
+// can be calculated in parallel at the same time.
+// This allows higher speeds than the calculation of pixel colors one
+// by one in series on the CPU. But, it puts an important constraint too:
+// The value of a pixel cannot depend on the value of another pixel. (the
+// calculations are done in parallel and it is impossible to know which
+// one will finish before the other one)
+// The outcome of a pixel can only depend on the pixel coordinate (and
+// some other input variables.)
+// This is the most important difference of shader programming. We'll
+// come to this point again and again
+//
+// Let's draw something that is not a solid color.
 
 #define PI 3.1415
 
@@ -69,27 +61,22 @@ void main() {
 	//vec2 mouse 		= u_mouse / u_resolution; 
 
 	// Uğur Güney
-	// play with these numbers:
-	float redAmount 	= 0.6; // amount of redness
-	float greenAmount 	= 0.2; // amount of greenness
-	float blueAmount 	= 0.9; // amount of blueness
+	// choose two colors
+	vec3 color1 = vec3(0.886, 0.576, 0.898);
+	vec3 color2 = vec3(0.537, 0.741, 0.408);
+	vec3 pixel;
 
-	vec3 color		= vec3(0.0);
-	// Uğur Güney
-	// Here we only input a single argument. It is a third way of
-	// contructing vectors.
-	// "vec3(x)" is equivalent to vec3(x, x, x);
-	// This vector is initialized as
-	// color.x = 0.0, color.y = 0.0; color.z = 0.0;
-	color.x 			= redAmount;
-	color.y 			= greenAmount;
-	color.z 			= blueAmount;
+	// vec3 color		= vec3(0.0);
+
+	// if the x coordinate is greater than 100 then plot color1
+	// else plot color2
+	float widthOfStrip = 100.0;
+	if( gl_FragCoord.x > widthOfStrip ) {
+		pixel = color2;
+	} else {
+		pixel = color1;
+	}
 	
-	float alpha 		= 1.0;
-	gl_FragColor	= vec4(color, alpha);
-
- 	// Uğur Güney
-	// Here we are seperating the color and transparency parts
-	// of the vec4 that represents the pixels.
+	gl_FragColor	= vec4(pixel, 1.0);
 
 }
