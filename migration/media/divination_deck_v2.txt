@@ -1,29 +1,29 @@
 Word	Reading																	
 Scholar	You have a strong drive for higher knowledge and academic pursuits.																	
-Joker	At times you are more interested in social interaction and leisure than other necessary work.																	
-Guardian	"A tough journey is in your future, but fear not, someone watches over you."																	
-Growth	"Despite the dissolution of academic life, you strive for something more. "																	
-Judgement	"Interviewing with the other, they tell you you're not good enough but you know better."																	
-Crossroad	You need to make a decision soon even if the options all seem wrong.																	
-Risk	"You consider dropping everything, and take a chance applying to study in another country."																	
-Transition	"After several rounds of visa interviews, you are accepted to an international program."																	
-Departure	"Your family takes you to the airport, and with teary goodbyes you travel to the United States."																	
-Arrival	"You arrive in small rural town, and everything is so new yet so boring."																	
-Order	"You are so impressed with how orderly the streets are, with their painted lines, and organized traffic."																	
-Wonder	"Until now, these fancy vending machines will be the coolest thing you've ever seen."																	
+Joker	At times you are more interested in leisurely interactions than work.																	
+Guardian	A tough journey is in your future, but fear not, someone watches over you.																	
+Growth	Despite the dissolution of academic life, you strive for something more.																	
+Judgement	Interviewing at the consulate, they tell you you're not good enough but you know better.																	
+Crossroad	You need to make a decision soon even if the options all feel wrong.																	
+Risk	You consider dropping everything, and take a chance applying to study in another country.																	
+Transition	After several rounds of visa interviews, you are accepted to an international program.																
+Departure	Your family takes you to the airport, and with teary goodbyes you travel to the United States.																
+Arrival	You arrive in small rural town, and everything is so new yet so boring.																	
+Order	You are so impressed with how orderly the streets are, with their painted lines, and organized traffic.															
+Wonder	Until now, this fancy vending machine is the coolest thing you've ever seen.																
 Longing 	You miss home and a lover you've left behind.																	
-Nostalgia	"This town is so dry, you miss spending your days playing in the ocean's waves."																	
+Nostalgia	This town is so dry, you miss spending your days playing in the ocean's waves.																
 Ambition	You consider applying for a transfer; you need more of a challenge.																	
 Community	You manage to find people and a place that feels like home - maybe they're a new family?																	
-Vulnerable	You have citizenship and a visa that are soon to expire.																	
-Connection	"This place feels uncanny and familiar, perhaps it's serendipity? or maybe just the music playing the background."																	
+Fruition	You have citizenship and a visa that are soon to expire.																	
+Connection	This place feels uncanny and familiar, perhaps it's serendipity? 															
 Striving	You are exhausted. It's difficult navigating all of the uncertainty.																	
-Union	"You will meet someone who changes your life, and becomes a life-long partner."																	
+Union	You will meet someone who changes your life, and becomes a life-long partner.																	
 Devotion	You consider moving across the continent to be closer to family.																	
-Solitude	"You start a new family, and there is a pleasantness in all the unknown."																	
+Solitude	You start a new family, and there is a pleasantness in all the unknown.																	
 Uncertainty	You hear from others that your home is becoming unsafe.																	
-Disorder	"You are no longer able to travel to foreign countries, including your homeland."																	
-Chaos	"Everything in your homeland is unstable, you will be unable to return."																	
+Disorder	You are no longer able to travel to foreign countries, including your homeland.																	
+Chaos	Everything in your homeland is unstable, you will be unable to return.																
 																		
 																		
 																		
