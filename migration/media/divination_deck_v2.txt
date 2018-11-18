@@ -1,29 +1,30 @@
 Word	Reading																	
 scholar	You have a strong drive for higher knowledge and academic pursuit.																	
 joker	At times you are more interested in leisurely interactions than 'real' work.																	
-guardian	A tough journey is in your future, but fear not, someone watches over you.																	
-growth	Despite the dissolution of academic life, you strive for something more.																	
-judgement	Interviewing at the consulate you're told that you're not good enough, but you know better.																	
-crossroads	You need to make a decision soon even if the options all feel wrong.																	
+guardian	A tough journey is in your future; but fear not, someone watches over you.																	
+growth	Despite the trials of academic life, you strive for something more.																	
+judgement	Interviewing with a gatekeeper, you're told that you're not good enough, but you know better.																	
+crossroads	You need to make a decision soon even if all the options feel wrong.																	
 risk	You consider dropping everything, and take a chance applying to study in another country.																	
-transition	After several rounds of visa interviews, you are accepted into an international program.																
+transition	After several rounds of visa interviews, you are admitted to an international program.																
 departure	Your family takes you to the airport, and with teary goodbyes you travel to the United States.																
-arrival	You arrive in small rural town; everything is so new, yet so boring.																	
-order	You are so impressed with how orderly the streets are with their painted lines, and organized traffic.															
+arrival	You find yourself in a small rural town; everything is so new yet so boring.																	
+order	You are impressed with how orderly the streets are - with their painted lines and organized traffic.															
 wonder	Until now, this fancy vending machine is the coolest thing you've ever seen.																
 longing 	You miss home and a lover you've left behind.																	
 nostalgia	This town is so dry; you miss spending your days playing in the ocean's waves.																
-ambition	You consider applying for a transfer; you need more of a challenge.												
-community	You meet new people, and find a place that feels like home.									
+ambition	You consider applying for a transfer because you need more of a challenge.												
+community	You meet new people and find a place that feels like home.
+									
 fruition	You've been granted citizenship.																	
 connection	This place feels uncanny yet familiar, perhaps it's serendipity? 															
-striving	You are exhausted. It's difficult navigating all of this instability.																	
+striving	You are exhausted. It's difficult navigating all this instability.																	
 union	You will meet someone who changes your life, and becomes a life-long partner.																	
 devotion	You consider moving across the continent to be closer to family.																	
-solitude	You've moved somewhere new; there's a pleasantness in all the unknown.																	
+solitude	You've moved somewhere new, but there's a pleasantness in all the unknown.																	
 uncertainty	You hear from others that your homeland is becoming unsafe.																	
-disorder	You will no longer able to travel internationally, including to your homeland.																	
-chaos	Your homeland is increasingly unstable; you'll be unable to return.																
+disorder	You are no longer able to travel internationally - even to your homeland.																	
+chaos	Your homeland is increasingly unstable; you are unable to return.																
 																		
 																		
 																		
